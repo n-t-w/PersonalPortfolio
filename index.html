@@ -1,78 +1,60 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="index.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
+
+<head>
+	<meta name="description" content="This is a website for my programming portfolio">
+    <meta name="keywords" content="code, web development, programming, portfolio">
+    <meta charset="utf-8">
+    <title>PersonalPortfolio</title>  
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<script src="https://kit.fontawesome.com/4e7b894e79.js" crossorigin="anonymous"></script>
+	
+	
 </head>
 
-
-
-<!-- NAV BAR CURRENTLY ON WEB PAGE -->
+<!-- NAV BAR FOR 'ALL', 'PROFILE', 'EDUCATION', 'WORK-EXPERIENCE' AND 'ADDITIONAL INFO' -->
 <header>
 	<nav>
 		<ul id="main_nav">
-			<li class="active all" data-title="all" title="All">ALL</li>
-			<li class="icon-address active" data-title="profile" title="Profile"></li>
-			<li class="icon-graduation-cap active" data-title="education" title="Education"></li>
-			<li class="icon-briefcase active" data-title="work" title="Work"></li>
-			<li class="icon-user active" data-title="user" title="Additional Info"></li>
-		</ul>
+			
+			<li class="icon-star-1 active" data-title="all" title="All"><a href="index.html"><i class="fa-solid fa-house"></i><br><strong>Home</strong></a></li>
+			
+			<li class="icon-address active" data-title="profile" title="Profile"><a href="profile.html"><i class="fa-regular fa-address-card"></i><br>Profile</a></li>
+					
+			<li class="icon-graduation-cap active" data-title="education" title="Education"><a href="education.html"><i class="fa-solid fa-graduation-cap"></i><br>Education</a></li>
 
-		<ul id="nav_ctrl">
-			<li class="icon-up-open" data-title="Next"></li>
-			<li class="icon-down-open" data-title="Previous"></li>
+			<li class="icon-briefcase active" data-title="work" title="WORK"><a href="work-experience.html"><i class="fa-solid fa-laptop-code"></i><br>Work Experience</a></li>
+
+
+			<li class="icon-user active" data-title="user" title="Additional Info"><a href="additional-info.html"><i class="fa-solid fa-circle-info"></i><br>Additional Info</a></li>
+			
 		</ul>
 
 	</nav>
+
 </header>
 
-
-<!-- NAV BAR TO OPEN NEW PAGE FOR ALL, PROFILE, EDUCATION, WORK AND ADDITIONAL INFO -->
 <!-- <header>
-	<nav>
-		<ul id="main_nav"> -->
-			<!-- <li class="active all" data-title="all" title="All">ALL</li> -->
-
-			<!-- <li><a class="active all" data-title="all" title="All" href="new-page.html">ALL</a></li> -->
-
-			<!-- <li class="icon-address active" data-title="profile" title="Profile"></li> -->
-
-			<!-- <li><a class="icon-address active" data-title="profile" title="Profile" href="profile.html"></a></li> -->
-
-			<!-- <li class="icon-graduation-cap active" data-title="education" title="Education"></li> -->
-
-			<!-- <li><a class="icon-graduation-cap active" data-title="education" title="Education" href="education.html"></a></li> -->
-			
-			<!-- <li class="icon-briefcase active" data-title="work" title="Work"></li> -->
-
-			<!-- <li><a class="icon-briefcase active" data-title="work" title="WORK" href="work.html"></a></li> -->
-
-			<!-- <li class="icon-user active" data-title="user" title="Additional Info"></li> -->
-
-			<!-- <li><a class="icon-user active" data-title="user" title="Additional Info" href="info.html"></a></li> -->
-		<!-- </ul>
-
-		<ul id="nav_ctrl">
-			<li class="icon-up-open" data-title="Next"></li>
-			<li class="icon-down-open" data-title="Previous"></li>
-		</ul>
-
-	</nav>
+    <nav>
+        <ul id="main_nav">
+            <!-- Other list items -->
+            
+            <!-- Other list items -->
+        </ul>
+    </nav>
 </header> -->
 
-
-
-<!-- <div id="instructions_container"> -->
-	<!-- Use Keys 'J' and 'K' to navigate through the timeline. -->
-<!-- </div>of #instructions_container -->
 
 <!-- MAIN BODY - CONTAINS TIMELINE FOR PROFILE, SKILLS, EDU, AND WORK EXP  -->
 <div id="timeline_container">
 	
 	<header>
 		<figure>
-			<!-- <img src="https://placeimg.com/480/480/people/black-woman-office-worker/sepia" alt="Black Woman Office Worker"> -->
+			<img src="Tabitha_W_N_Image.png" alt="Description of My Image">
 		</figure>
-    <h1><center>Short Resume</center> <br/> Tabitha Ncooro</h1>
+    <h1>Short Resume <br/> Tabitha Ncooro</h1>
 	</header>
 	
 	<ul>
@@ -82,7 +64,7 @@
 			<div class="event_content">
 				<h2>Profile</h2>
 				<p>
-					Experienced e-commerce professional transitioning to web development.
+					Aspiring, newly certified web developer transitioning from e-commerce. 
 				</p>
 			</div>
 			<div class="event_date">
@@ -102,6 +84,32 @@
 				Current
 			</div>
 		</li>
+
+		<li class="education_event">
+			<div class="event_icn icon-graduation-cap"></div>
+			<div class="event_content">
+				<h2>Education</h2>
+				<p>
+					Introduction to Web Development 
+				</p>
+			</div>
+			<div class="event_date">
+				CBF Academy - Completed
+			</div>
+		</li>
+
+		<li class="education_event">
+			<div class="event_icn icon-graduation-cap"></div>
+			<div class="event_content">
+				<h2>Education</h2>
+				<p>
+					The Complete Python Bootcamp
+				</p>
+			</div>
+			<div class="event_date">
+				Udemy - In Progress
+			</div>
+		</li>
 		
 		<li class="education_event">
 			<div class="event_icn icon-graduation-cap"></div>
@@ -112,7 +120,23 @@
 				</p>
 			</div>
 			<div class="event_date">
-				1.Completed
+				Moi University, Kenya - Completed
+			</div>
+		</li>
+
+		<li class="work_event">
+			<div class="event_icn icon-briefcase"></div>
+			<div class="event_content">
+				<h2>Work Experience</h2>
+				<p>
+					Web Developer
+				</p>
+				<p>
+					Freelance Developer Working on Personal Projects
+				</p>
+			</div>
+			<div class="event_date">
+				Current
 			</div>
 		</li>
 		
@@ -124,11 +148,11 @@
 					E-Commerce Account Manager
 				</p>
 				<p>
-					BGNT Ltd
+					eBay
 				</p>
 			</div>
 			<div class="event_date">
-				1. Present
+				Current
 			</div>
 		</li>
 		
@@ -144,7 +168,7 @@
 				</p>
 			</div>
 			<div class="event_date">
-				2. Previous
+				Previous
 			</div>
 		</li>
 
@@ -160,7 +184,7 @@
 				</p>
 			</div>
 			<div class="event_date">
-				3. Previous
+				Previous
 			</div>
 		</li>
 
@@ -176,7 +200,7 @@
 				</p>
 			</div>
 			<div class="event_date">
-				4. Previous
+				Previous
 			</div>
 		</li>
 
@@ -192,18 +216,17 @@
 				</p>
 			</div>
 			<div class="event_date">
-				5. Previous
+				Previous
 			</div>
 		</li>
 
-		<!-- FOOTER - BUT STILL PART OF TIMELINE - CONTAINS ADDITIONAL INFO & CONTACT DETAILS -->
+
 
 		<li class="user_event">
 			<div class="event_icn icon-user"></div>
 			<div class="event_content">
 				<h2>Additional information</h2>
 				<ul>
-					<li>Civil status: Married</li>
 					<li>Nationality: British</li>
 					<li>Residency: United Kingdom</li>
 					<li>Languages: English, Swahili</li>
@@ -236,3 +259,4 @@
 		i	
 </div><!-- of #info_container -->
 
+</html>

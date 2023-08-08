@@ -2,41 +2,44 @@
 /* Font for Short Resume & Tabitha Ncooro */
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
+
+
+
+
 /* CSS incl Font for Navbar & Timeline 'P', 'E', 'W', 'I' */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: 'Helvetica';
-  font-style: normal;
-  font-weight: normal;
+  font-style: italic;
+  font-weight: bolder;
   display: inline-block;
-  text-decoration: inherit;
+  /* text-decoration: inherit; */
   width: 1em;
-  margin-right: 0.2em;
+  /* margin-right: 0.2em; */
   text-align: center;
   opacity: 0.8;
-
 /* buttons height */
   line-height: 1em;
-
 /* Animation center compensation - margins are symmetric */
-  margin-left: 0.2em;
-
+  /* margin-left: 0.2em; */
 /* increased icons size */
 font-size: 120%;
-
 /* 3D effect */
 text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.3);
 }
 
+
 /* CSS - Unicode Characters S,P,F,E,I,W */
-.icon-star-1:before { content: '\73'; } /* 's' */
+.icon-star-1:before { content: '\48'; } /* 'H' */
 .icon-address:before { content: '\50'; } /* 'P' */
 .icon-down-circled:before { content: '\66'; } /* 'f' */
 .icon-graduation-cap:before { content: '\45'; } /* 'E' */
 .icon-user:before { content: '\49'; } /* 'I' */
 .icon-briefcase:before { content: '\57'; } /* 'W' */
 
-/* CSS for Dialogue boxes "Profile, Education etc etc" */
+
+
+/* CSS for Centre Margin + Positioning of Dialogue Boxes on either side of the centre line*/
 * {
 	 -webkit-box-sizing: border-box;
 	-moz-box-sizing:border-box;
@@ -45,118 +48,61 @@ text-shadow: 1px 1px 1px rgba(7, 7, 7, 0.3);
 
 /* CSS for TIMELINE (Body of Whole Resume - minus Navbar) & TEXT IN DIALOGUE BOXES */
 body {
-	background:#ebe7e4;
-	background-image: url("grey_background.png");
-	color:#6d6b6a;
-	font-size:13px;
+	/* background:#ebe7e4; */
+	background-image: url("blueBackground.jpg");
+	color:#070707;
+	font-size:14px;
 	font-family:helvetica;
 	overflow-y:scroll;
 }
 
-/* CSS for TIMELINE - DIALOGUE BOXES -SIZE, SPACING etc */
+/* CSS for NAVBAR */
 body > header {
 	width:100%;
 	position:fixed;
 	z-index:30;
 	background:#E0DCD9;
-	border-bottom:1px solid #d5d1cf;
-	box-shadow:0 1px 1px white;
+	border-bottom:10px solid #a43903bb;
+	box-shadow:0 1px 1px #a43903bb;
 	top:0;
 	left:0;
 }
 
 /* CSS for NAVBAR i.e ALL, P, E, W, I */
 body > header nav {
-	width:960px;
-	margin:0 auto;
-	overflow:hidden;
+	width:1600px;
+	/* margin:0 auto; */
+	/* overflow:hidden; */
+	background-image: url("NavyBackground.jpg");
 }
 
 /* CSS for NAVBAR i.e ALL, P, E, W, I */
 body > header nav ul {
-	margin:0 0 0 -65px;
+	margin:0 0 0 -50;
 	padding:0;
 	text-align:center;
 	font-size: 0em;
-		letter-spacing: 0px;
-		word-spacing: 0px;
+	/* letter-spacing: 0px;
+	word-spacing: 0px; */
 }
 
 /* CSS for NAVBAR i.e ALL, P, E, W, I */
 body > header nav li {
 	display:inline-block;
 	cursor:pointer;
-	border-left:1px solid #ebe7e4;
-	border-top:1px solid #E0DCD9;
-	box-shadow:-1px 0px 1px #d5d1cf;
-	padding:1.2em;
+	border-left:1px solid #a84b04;
+	border-top:1px solid #a84b04;
+	box-shadow:-1px 0px 1px #a84b04;
+	padding:1.8em;
 	font-size:18px;
 }
 
-/* CSS for Header Navbar - Hover (ALL only) */
-body > header nav li:hover {
-	background:#d5d1cf;
-}
-
-/* CSS for Header Navbar - (not sure) */
-/* body > header nav li:first-child {
-	border-left:1px solid #E0DCD9;
-	box-shadow:-1px 0px 1px #E0DCD9;
-	text-shadow:1px 1px 1px #fff;
-} */
-
 /* CSS for Header Navbar - Text color(WHITE) */
 body > header nav li:active,body > header nav li.active {
-	color:black;
+	color:rgb(252, 247, 247);
 }
 
-/* CSS for Header Navbar - Text Shadow (ALL only)*/
-/* body > header nav li.all:active,body > header nav li.all.active {
-	text-shadow:1px 1px 1px #444;
-} */
 
-/* CSS for Header Navbar - "P" */
-body > header nav li.icon-address:active,body > header nav li.icon-address.active {
-	background:#01646f;
-	border-left:1px solid #01646f;
-	border-top:1px solid #01646f;
-}
-
-/* CSS for Header Navbar - "E" */
-body > header nav li.icon-graduation-cap:active,body > header nav li.icon-graduation-cap.active {
-	background:#02a5b0;
-	border-left:1px solid #02a5b0;
-	border-top:1px solid #02a5b0;
-}
-
-/* CSS for Header Navbar - "W" */
-body > header nav li.icon-briefcase:active,body > header nav li.icon-briefcase.active {
-	background:#6addd0;
-	border-left:1px solid #6addd0;
-	border-top:1px solid #6addd0;
-}
-
-/* CSS for Header Navbar - "?" */
-/* body > header nav li.icon-star-1:active,body > header nav li.icon-star-1.active {
-	background:#5E6297;
-	border-left:1px solid #333;
-	border-top:1px solid #333;
-	box-shadow:none;
-} */
-
-/* CSS for Header Navbar - "I" */
-body > header nav li.icon-user:active,body > header nav li.icon-user.active {
-	background:#018b82;
-	border-left:1px solid #018b82;
-	border-top:1px solid #018b82;
-}
-
-/* CSS for Header Navbar - Position + Height-Of-Navbar? */
-body > header nav ul#nav_ctrl {
-	position:absolute;
-	top:0;
-	right:0;
-}
 
 /* CSS for Timeline Container (Short Resume & Tabitha Ncooro */	
 div#timeline_container {
@@ -168,7 +114,7 @@ div#timeline_container {
 
 div#timeline_container header {
 	position:relative;
-	z-index:20;
+	/* z-index:20; */
 }
 
 /* CSS for Timeline Container - Header Figure (Large Circle */
@@ -180,14 +126,14 @@ div#timeline_container header figure {
 	overflow:hidden;
 	display:block;
 	margin:0 auto;
-	background-image: url("womanofficeworker.png");
-	background-size: cover;
-	background-position: center;
+	/* background-image: url("Tabitha_W_N_Image.png"); */
+	/* background-size: cover;
+	background-position: center; */
 }
 
 
 
-/* CSS for Timeline Container - Header Figure (Large Circle */
+/* CSS for Timeline Container - Header Figure Image inside Large Circle */
 div#timeline_container header figure img {
 	height:100%;       		
 }
@@ -199,7 +145,7 @@ div#timeline_container header h1 {
 	right:80px;
 	font-family: 'Lobster', cursive;
 	font-size:2.8em;
-	text-shadow:2px 2px 1px #fff;
+	/* text-shadow:2px 2px 1px #fff; */
 	font-weight:normal;
 }
 
@@ -227,7 +173,7 @@ div#timeline_container > ul:after {
 	left:-6px;
 }
 
-
+/* CSS TIMELINE CONTAINER UL LI */
 div#timeline_container > ul > li {
 	position:relative;
 	padding:.3em 0;
@@ -272,28 +218,20 @@ div#timeline_container > ul li > div.event_icn {
 div#timeline_container > ul > li:hover div.event_icn,div#timeline_container > ul li.active div.event_icn{color:white;}
 
 /* CSS circle container "P" */
-div#timeline_container > ul > li.life_event div.event_icn { background:#01646f;}
-div#timeline_container > ul li.life_event:hover div.event_icn,div#timeline_container > ul li.life_event.active div.event_icn {background:#01646f}
+div#timeline_container > ul > li.life_event div.event_icn { background:#080808;}
+div#timeline_container > ul li.life_event:hover div.event_icn,div#timeline_container > ul li.life_event.active div.event_icn {background:#080808}
 
 /* CSS circle container "E" */
-div#timeline_container > ul > li.education_event div.event_icn { background:#02a5b0}
-div#timeline_container > ul > li.education_event:hover div.event_icn,div#timeline_container > ul li.education_event.active div.event_icn { background:#02a5b0}
+div#timeline_container > ul > li.education_event div.event_icn { background:#080808}
+div#timeline_container > ul > li.education_event:hover div.event_icn,div#timeline_container > ul li.education_event.active div.event_icn { background:#080808}
 
 /* CSS circle container "W" */
-div#timeline_container > ul > li.work_event div.event_icn { background:#6addd0}
-div#timeline_container > ul > li.work_event:hover div.event_icn,div#timeline_container > ul li.work_event.active div.event_icn { background:#6addd0}
+div#timeline_container > ul > li.work_event div.event_icn { background:#080808}
+div#timeline_container > ul > li.work_event:hover div.event_icn,div#timeline_container > ul li.work_event.active div.event_icn { background:#080808}
 
 /* CSS circle container "I" */
-div#timeline_container > ul > li.user_event div.event_icn {background:#018b82}
-div#timeline_container > ul > li.user_event:hover div.event_icn,div#timeline_container > ul li.user_event.active div.event_icn { background:#018b82}
-
-
-/* div#timeline_container > ul > li.portfolio_event div.event_icn {
-	background:#5E6297
-} */
-
-
-/* div#timeline_container > ul > li.portfolio_event:hover div.event_icn,div#timeline_container > ul li.portfolio_event.active div.event_icn { background:#5E6297} */
+div#timeline_container > ul > li.user_event div.event_icn {background:#080808}
+div#timeline_container > ul > li.user_event:hover div.event_icn,div#timeline_container > ul li.user_event.active div.event_icn { background:#080808}
 
 
 div#timeline_container > ul > li div.event_content {
@@ -310,8 +248,8 @@ div#timeline_container > ul > li div.event_content {
 	transition:all 0.3s ease-in-out;
 }
 
-
-div#timeline_container > ul > li div.event_content a{color:#999;}
+/* TIMELINE CONTAINER UL LI */
+div#timeline_container > ul > li div.event_content a{color:#f9f7f7;}
 
 div#timeline_container > ul > li:hover div.event_content,div#timeline_container > ul li.active div.event_content {
 	opacity:1;
@@ -323,6 +261,8 @@ div#timeline_container > ul > li:nth-child(even) div.event_content {
 	left:-470px;
 	text-align:right
 }
+
+
 div#timeline_container > ul > li div.event_content:before {
 	content:"";
 	position:absolute;
@@ -336,7 +276,7 @@ div#timeline_container > ul > li div.event_content:before {
 	background:white;
 }
 
-        	
+       	
 div#timeline_container > ul > li:nth-child(odd) div.event_content:before {
 	left:-11px;
 	-webkit-transform: rotate(45deg);
@@ -356,7 +296,7 @@ div#timeline_container > ul > li:nth-child(even) div.event_content:before {
 	transform: rotate(225deg);
 }
 
-
+/* TIMELINE CONTAINER - EVENT CONTENT H2 */
 div#timeline_container > ul > li div.event_content h2 {
 	margin:0.3em 0;
 	padding:0;
@@ -364,14 +304,14 @@ div#timeline_container > ul > li div.event_content h2 {
 	font-size:1.4em;
 }
 
-
+/* TIMELINE CONTAINER - EVENT CONTENT P */
 div#timeline_container > ul > li div.event_content p {
 	margin:0;
 	padding:0;
 	line-height:1.5em;
 }
 
-
+/* TIMELINE CONTAINER - EVENT CONTENT UL */
 div#timeline_container > ul > li div.event_content ul {
 	margin:0;
 	padding:0;
@@ -379,13 +319,13 @@ div#timeline_container > ul > li div.event_content ul {
 	line-height:1.5em;
 }
 
-
+/* TIMELINE CONTAINER - EVENT DATE */
 div#timeline_container > ul > li div.event_date {
 	top:1em;
 	width:180px;
 	text-align:right;
 	font-size:1.2em;
-	text-shadow:1px 1px 1px white;
+	text-shadow:1px 1px 1px rgba(118, 117, 117, 0);
 	opacity:0.3;
 	font-weight:bold;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -394,67 +334,15 @@ div#timeline_container > ul > li div.event_date {
 	transition:all 0.3s ease-in-out;
 }
 
-
+/* CSS for event date on timeline */
 div#timeline_container > ul > li:nth-child(even) div.event_date {text-align:left;}
 
 div#timeline_container > ul > li:hover div.event_date,div#timeline_container > ul li.active div.event_date {opacity:0.9;}
 div#timeline_container > ul > li:nth-child(odd) div.event_date {right:60px;}
 div#timeline_container > ul > li:nth-child(even) div.event_date {left:60px;}
 
-
-div#instructions_container {
-	position:fixed;
-	padding:2em;
-	width:300px;
-	bottom:2em;
-	right:2em;
-	line-height:1.4em;
-	background:#FDFDBD;
-	border-radius:10px;
-	border:1px solid #DDDBDA;
-	z-index:40;
-	font-size:0.9em;
-	color:black;
-	line-height:1.6em;
-}
-
-
-div#info_container{
-	position:fixed;
-	bottom:2em;
-	right:2em;
-	border-radius:50%;
-	color:#ebe7e4;
-	background:#6d6b6a;
-	opacity:0.3;
-	cursor:pointer;
-	width:22px;
-	font-size:14px;
-	height:22px;
-	padding-top:2px;
-	text-align:center;
-	font-family:'lobster','cursive';
-	display:none;
-}
-
-
 div#info_container:hover {
 	opacity:0.9;
 }
 
 
-footer {
-	width:960px;
-	margin:2em auto;
-	color:#999;
-}
-
-
-footer a {
-	color:#444;
-}
-
-
-footer a.icon-down-circled {
-	text-decoration:none;
-}
